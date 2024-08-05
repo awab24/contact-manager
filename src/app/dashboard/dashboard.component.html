@@ -1,1 +1,13 @@
-<p>dashboard works!</p>
+<div>
+    <h1>Dashboard</h1>
+    <p><strong>Name:</strong> {{ name }}</p>
+    <p><strong>Phone:</strong> {{ phoneNumber }}</p>
+    <p><strong>Email:</strong> {{ email }}</p>
+    <p><strong>Addresses:</strong></p>
+    <ul>
+      <li *ngFor="let address of addresses">{{ address }}</li>
+    </ul>
+    <div id="map" style="height: 400px;"></div>
+    <button (click)="goToAddContact()">Add Contact</button>
+  </div>
+  
