@@ -58,9 +58,6 @@ export class AddContactComponent implements OnInit {
 
       // Navigate back to dashboard
       this.router.navigate(['/']);
-    } else {
-      // Mark all controls as touched to trigger validation messages
-      this.contactForm.markAllAsTouched();
     }
   }
 }
